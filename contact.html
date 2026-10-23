@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | BrightPath</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html">Bright<span>Path</span></a>
+      <nav>
+        <a href="index.html">Home</a><a href="services.html">Services</a
+        ><a href="about.html">About</a
+        ><a class="active" href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="inner-page">
+      <p class="eyebrow">LET'S TALK</p>
+      <h1>Contact Us</h1>
+      <p class="lead">
+        Complete the form below to test the front-end validation.
+      </p>
+      <section class="contact-panel">
+        <form id="contactForm">
+          <label for="name">Full name</label
+          ><input
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            placeholder="Your name"
+          /><label for="email">Email address</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="you@example.com"
+          /><label for="topic">What do you need help with?</label
+          ><select id="topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option>Website Design</option>
+            <option>Computer Assistance</option>
+            <option>Online Form Support</option>
+            <option>Other</option></select
+          ><label for="message">Message</label
+          ><textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            minlength="10"
+            placeholder="Write a short message..."
+          ></textarea
+          ><button class="button" type="submit">Submit Message</button>
+          <p id="formMessage" aria-live="polite"></p>
+          <p class="small">
+            Demo only: the form validates in your browser and does not send or
+            store data.
+          </p>
+        </form>
+        <aside>
+          <h2>Contact Details</h2>
+          <p><strong>Email</strong><br />brightpath@gmail.com</p>
+          <p>
+            <strong>Location</strong><br />Kathmandu, Nepal 
+          </p>
+        </aside>
+      </section>
+    </main>
+    <footer>© 2026 BrightPath · Practice business website</footer>
+  </body>
+</html>
